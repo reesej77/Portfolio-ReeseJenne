@@ -11,10 +11,16 @@ h3 {
 }
 p {
     color: black;
+    text-align: center;
 }
 
 ul {
     color: black;
+}
+@media (min-width: 1200px) {
+    ul {
+        max-width: 60%;
+    }
 }
 h2 {
     color: black;
@@ -73,7 +79,8 @@ main img {
     transition: transform 0.3s ease-in-out;
 }
 
-nav {
+@media (min-width: 1200px) {
+    nav {
     background: linear-gradient(45deg, #347aeb, #ff6348); /* Dark blue to orange gradient */
     text-align: left;
     padding: 15px;
@@ -81,6 +88,7 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
+    }
 }
 
 nav ul {
@@ -219,7 +227,7 @@ html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 200%;
     cursor: pointer;
 }
 
