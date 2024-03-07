@@ -1,0 +1,247 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light grayish background */
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background: linear-gradient(45deg, #347aeb, #ff6348); /* Teal to orange gradient */
+    margin-top: 54px;
+}
+
+.header h1 {
+    font-family: monospace; /* Change to a more elegant font for headers */
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+main img {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    animation: slideInFromBottom is ease forwards;
+}
+
+.social-link {
+    margin: 0 15px;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav {
+    background: linear-gradient(45deg, #347aeb, #ff6348); /* Dark blue to orange gradient */
+    text-align: left;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.left-align {
+    text-align: left;
+}
+
+main {
+    font-family: monospace; /* Change to a clean and modern font for content */
+    padding: 0px;
+    text-align: center;
+    background-color: #fff; /* White background for main content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+.slide-left {
+    animation: slideInFromLeft 10s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hide initially */
+    cursor: pointer;
+}
+
+#scroll-to-top img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#scroll-to-top:hover img {
+    transform: scale(1.2);
+}
+
+.contact-bar {
+    font-family: monospace;
+    background: linear-gradient(45deg, #347aeb, #ff6348);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-bar button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-bar button:hover {
+    text-decoration: underline;
+}
+
+/* Add or modify styles for logo, name, and role */
+.profile {
+    display: flex; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin-bottom: 20px;
+    animation: slideInFromLeft is ease forwards;
+}
+
+.logo {
+    max-width: 25%; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add some space between logo and name */
+    border-radius: 50%;
+}
+
+.name-container {
+    text-align: left;
+    padding-left: 10%; /* Center the text */
+    animation: slideInFromRight 1s ease forwards;
+}
+
+h1 {
+    margin: 5px 0;
+}
+
+.role {
+    font-style: italic;
+}
+
+/* Additional styles */
+.patterns {
+    height: 100vh;
+}

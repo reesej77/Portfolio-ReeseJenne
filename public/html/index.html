@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <header class="header fade-in" style="margin-top: 52px;">
+        <div class="header-content">
+            <div class="profile profile-animation">
+                <img style="animation: slideInFromLeft 2s ease forwards;" src="/images/reesejenneimage.jpg" alt="Your Logo" class="logo">
+                <style>
+                    @keyframes slideInFromLeft {
+                        from {
+                            transform: translateX(-100%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }      
+                </style>
+                <div class="name-container" style="animation: slideInFromRight 2s ease forwards;">
+                    <h1 style="font-size:500%; color: white;
+                    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.20); font-family:monospace" >Reese Jenne</h1>
+                    <p class="role" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Aspiring Full Stack Software & Mobile Application Developer</p>
+                </div>
+            </div>
+            <div class="social-links social-animation" style="animation: slideInFromBottom 2s ease forwards;">
+                <a href="https://www.linkedin.com/in/reesejenne/" target="_blank" rel="noopener noreferrer" class="social-link"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/reesej77" target="_blank" rel="noopener noreferrer" class="social-link" ><img src="images/github.png" alt="Github"></a>
+                <a href="https://mailto:reese.jenne@gmail.com" class="social-link"><img src="images/gmail.png" alt="Gmail"></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </header>
+    <nav class="fade-in">
+        <ul style="font-family: monospace;">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#project-list">Projects</a></li>
+            <li><a href="#skill-list">Skills</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="fade-in">
+        <br>
+            <!-- Home Section -->
+            <section id="about-me">
+                <h2 style="font-family: monospace;">About Me</h2>
+                <br>
+                <p style="max-width: 60%; margin: 0 auto; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif">Welcome to my Personal Portfolio! My name is Reese Jenne and I am an aspiring Computer Scientist at Rutgers University, equipped with a versatile skill set in programming languages, web/software development, and cloud operations. My recent AWS Certified Cloud Practitioner certification reflects my passion for cloud-based solutions. I am enthusiastic about launching my career and actively seeking job opportunities post-graduation.</p>
+            </section>
+            <br><hr><br>
+
+            <section id="education" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;">
+                <h2 style="font-family: monospace;">Education</h2>
+                <br><br>
+                <img src="/images/rutgers.png" alt="Your School" class="image">
+                <br><br>
+                <p><i>School of Arts and Sciences, Rutgers University | New Brunswick, NJ</i></p>
+                <p><b>Major:</b> Bachelor of Arts in Computer Science | Expected May 2024</p>
+                <p><b>Minor:</b> Business Administration</p>
+                <p><b>GPA:</b> 3.35</p>
+                <br><br>
+                <h2 style="font-family: monospace;">Awards</h2>
+                <ul style="max-width: 21%; margin: 0 auto; text-align: left;">
+                    <li>Dean's List, Rutgers University</li>
+                    <li>National Congressional Nomination</li>
+                </ul>
+            </section>
+            <br><hr><br>
+
+            <section id="experience" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <h2 style="font-family: monospace;">Experience</h2>
+                <br><br><br>
+                <div>
+                    <img src="/images/colgate.png" alt="Your Logo" class="image">
+                    <br><br>
+                    <h3>Application and Software Development Intern</h3>
+                    <p><i>Colgate-Palmolive | Piscataway, NJ | January 2024 - Present</i></p>
+                    <br>
+                    <ul style="max-width: 60%; margin: 0 auto;">
+                        <li>Succesfully Completed a hybrid training course that covered topics such as Python, Javascript, Google Cloud Platform, Docker, React, and Computer Security</li>
+                        <br><li>Managed contacts database in Salesforce Marketing Cloud (SFMC) through automation studio, utilizing SQL queries, data extension creation, and dynamic AMPscript emails</li>
+                        <br><li>Developed server-side JavaScript scripts to monitor and track contact volumes, optimizing efficiency in email communications within SFMC</li>
+                    </ul>
+                </div>
+                <br><br><br><br><br>
+                <div>
+                    <img src="/images/somos.png" alt="Your Logo" class="image">
+                    <br><br>
+                    <h3>Cloud Operations Intern</h3>
+                    <p><i>Somos, Inc. | East Brunswick, NJ | May 2023 - August 2023</i></p>
+                    <br>
+                    <ul style="max-width: 60%; margin: 0 auto;">
+                        <li>Collaborated with cross-functional teams on the 'RespOrg Change Reimagined' project, leading the migration of Service Request forms and Product documentation from TFNRegistry Secure Portal to Somos Support Center within Zendesk, while leveraging AWS tools and services</li>
+                        <br><li>Demonstrated proficiency in the Zendesk ticketing system by creating service request forms for end-users and agents, as well as automating requests through the utilization of triggers, targets, and webhooks.</li>
+                        <br><li>Contributed effectively to the Capstone project, gaining valuable experience in agile development and online collaboration, which culminated into the successful development of a Priority Matrix</li>
+                    </ul>
+                </div>
+                <br><br><br><br><br>
+                <div>
+                    <img style="max-width: 15%; margin: 0 auto;" src="/images/dcs.png" alt="Your Logo" class="image">
+                    <h3>Tech Support Specialist</h3>
+                    <p><i>Rutgers University Digital Classroom Services | New Brunswick, NJ | January 2023 - December 2023</i></p>
+                    <br>
+                    <ul style="max-width: 40%; margin: 0 auto;" >
+                        <li>Design, install, and maintain classroom presentation technology, providing ongoing support for daily use.</li>
+                        <br><li>Deliver training sessions and offer technical assistance to faculty and students for utilizing classroom technology effectively.</li>
+                        <br><li>Offer troubleshooting services for software and devices to address any technical issues promptly.</li>
+                    <br><br></ul>
+                </div>
+            </section>
+            <br><hr><br>
+
+            <section id="certifications" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";>
+                <h2 style="font-family: monospace;">Certifications</h2>
+                <br>
+                <ul style="max-width: 37%; margin: 0 auto;">
+                    <li>AWS Certified Cloud Practitioner (Issued by AWS, October 2023)</li>
+                </ul>
+                <br>
+                <img style="max-height: 20%; max-width: 20%; margin: 0 auto;" src="/images/aws.png" alt="Your Logo" class="image">
+            </section>
+            <br><hr><br>
+             <!-- Fancy line break -->
+
+            <!-- Projects Section -->
+            
+            <section id="project-list" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <h2 style="font-family: monospace;">Project List</h2>
+                <ul class="left-align" style="max-width: 60%; margin: 0 auto;">
+                    <li><strong>Photos (JavaFX)</strong> - Designed and implemented a single-user photo management application in JavaFX, featuring user authentication, album creation and management, photo tagging, search functionality, and an admin subsystem for user management</li>
+                    <br><li><strong>Photos Android Application (Java, XML)</strong> - Implemented a photo management Android app, migrating features from the JavaFX version, with functionalities such as album creation, deletion, and renaming, photo addition, removal, and display, tag management, photo movement between albums, and advanced tag-based searches</li>
+                    <br><li><strong>Online Discussion Fourms (UML)</strong> - Developed an object-oriented design and UML class diagram for discussion forums hosted on a website.</li>
+                    <br><li><strong>Student Roster Software (Java)</strong> - Created a console-based interactive user interface for a university to manage its student roster and tuition data</li>
+                    <br><li><strong>Optical Character Recognition System (Python)</strong> - Developed an optical character recognition system that can identify and extract grayscale images of hand-written characters and store the information</li>
+                    <br><li><strong>Chess (Java)</strong> - Developed a fully interactive two-player Chess game with a console-based user interface, implementing all the rules and functionalities of the classic game</li>
+                    <br><li><strong>Pizzeria Order Website (HTML, CSS, JavaScript)</strong> - Designed a website capable of processing advanced menu orders, calculating the total price including sales tax and tip, and providing customers with the final cost of their purchase</li>
+                    <br><li><strong>Weather Generator (Java)</strong> - Developed a program that works as a weather generator, capable of producing a “synthetic” time series of weather for a specific location using advanced algorithm-based forecast generation and statistical characteristics of observed weather patterns</li>
+                    <br><li><strong>Heart Transplant (Java)</strong> - Created a program using algorithms based on a patient’s heart condition and survivability factors to determine the order in which these individuals should receive a transplant</li>
+                </ul>
+            </section>
+            <br><hr><br>
+             <!-- Fancy line break -->
+
+            <!-- Skills Section -->
+            
+            <section id="skill-list" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <h2 style="font-family: monospace;">Skill Set</h2>
+                <br><ul class="left-align" style="max-width: 60%; margin: 0 auto;">
+                    <li>Fluent in Python, Java, JavaScript, AMPscript, C, HTML, CSS, SQL, MS Office, Google Suite, Git/GitHub, and SFMC</li>
+                    <li>Experience developing websites and mobile applications utilizing full-stack software in an agile environment</li>
+                    <li>Operating system knowledge of Windows, Linux, and Mac OS</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+                <br><br>
+            </section>
+
+            <br><hr><br><br><br>
+            <div id="contact-section" class="contact-bar">
+                <button onclick="location.href='//mailto:reese.jenne@gmail.com';" style="font-family: monospace;">Contact Me</button>
+            </div>
+
+            <style>
+                /* Add background colors to each section */
+        #about-me {
+            background-color: #f5f5f5; /* Light gray */
+            padding: 20px;
+        }
+
+        #education {
+            background-color: #edf7ed; /* Light green */
+            padding: 20px;
+        }
+
+        #experience {
+            background-color: #f8f3eb; /* Light beige */
+            padding: 20px;
+        }
+
+        #certifications {
+            background-color: #eae6f6; /* Light purple */
+            padding: 20px;
+        }
+
+        #project-list {
+            background-color: #f5f5f0; /* Light ivory */
+            padding: 20px;
+        }
+
+        #skill-list {
+            background-color: #e8f8ff; /* Light sky blue */
+            padding: 20px;
+        }
+
+        #contact-section {
+            background-color: #ffe6e6; /* Light coral */
+            padding: 20px;
+        }
+                main img {
+                    max-width: 25%;
+                    max-height: auto;
+                }
+            </style>
+    </main>
+    <!-- Up Arrow Button -->
+    <div id="scroll-to-top" onclick="scrollToTop()">
+        <img src="/images/up-arrow.png" alt="Up Arrow">
+    </div>
+     <!-- Add this JavaScript at the end of your body -->
+     <!-- Add this JavaScript at the end of your body -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Function to adjust scrolling position when clicking on navigation links
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const offset = 60; // Adjust this value to fine-tune the scrolling position
+                window.scrollTo({
+                    top: section.offsetTop - offset,
+                    behavior: 'smooth',
+                });
+            }
+        }
+
+        // Function to scroll to the bottom of the page
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth',
+            });
+        }
+
+        // Attach click event listeners to navigation links
+        document.querySelectorAll('nav a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const sectionId = link.getAttribute('href').substring(1);
+
+                // Scroll to the bottom if it's the "Contact" link
+                if (sectionId === 'contact-section') {
+                    scrollToBottom();
+                } else {
+                    scrollToSection(sectionId);
+                }
+            });
+        });
+
+        window.onscroll = function () {
+            const upArrow = document.getElementById('scroll-to-top');
+            if (window.scrollY > 50) {
+                upArrow.style.display = 'block';
+            } else {
+                upArrow.style.display = 'none';
+            }
+            const contactBar = document.querySelector('.contact-bar');
+            const body = document.body;
+            const windowHeight = window.innerHeight;
+            const bodyHeight = body.clientHeight;
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            // Check if the user has scrolled to the bottom
+            if (scrollY + windowHeight >= bodyHeight) {
+                contactBar.style.display = 'block';
+            } else {
+                contactBar.style.display = 'none';
+            }
+        };
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+</script>
+</body>
+</html>
