@@ -5,6 +5,12 @@ body {
     box-sizing: border-box;
     background-color: #f9f9f9; /* Light grayish background */
 }
+@media (min-width: 1200px) {
+    #aboutmetext {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
 
 h3 {
     color:black;
